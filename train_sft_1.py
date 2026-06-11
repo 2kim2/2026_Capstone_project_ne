@@ -32,13 +32,13 @@ for filename in os.listdir(DATASET_DIR):
             else:
                 all_data.append(data)
 
-            print(f"✅ 로드 성공: {filename}")
+            print(f"로드 성공: {filename}")
 
         except Exception as e:
-            print(f"❌ 로드 실패: {filename}")
+            print(f"로드 실패: {filename}")
             print(e)
 
-print(f"\n✅ 총 {len(all_data)}개 항목 로드 완료")
+print(f"\n총 {len(all_data)}개 항목 로드 완료")
 
 # ─────────────────────────────────────────
 # 3. 토크나이저 로드
@@ -71,7 +71,7 @@ dataset = Dataset.from_list(
     [{"text": format_prompt(item)} for item in all_data]
 )
 
-print(f"✅ 데이터셋 변환 완료: {dataset}")
+print(f"데이터셋 변환 완료: {dataset}")
 
 # 학습 데이터 확인
 print("\n===== 학습 데이터 예시 =====")
@@ -151,4 +151,4 @@ trainer.train()
 trainer.save_model(OUTPUT_DIR)
 tokenizer.save_pretrained(OUTPUT_DIR)
 
-print(f"✅ 학습 완료 및 LoRA 모델 저장 완료: {OUTPUT_DIR}")
+print(f"학습 완료 및 LoRA 모델 저장 완료: {OUTPUT_DIR}")
