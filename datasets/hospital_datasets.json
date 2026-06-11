@@ -1,0 +1,182 @@
+﻿[
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "wheelchair",
+        "response":  [
+                         "\"Sit in a wheelchair\" (휠체어에 앉다)",
+                         "\"Push the wheelchair\" (휠체어를 밀다)",
+                         "\"Fold the wheelchair\" (휠체어를 접다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "crutch",
+        "response":  [
+                         "\"Walk on crutches\" (목발을 짚고 걷다)",
+                         "\"Adjust the crutch\" (목발을 조절하다)",
+                         "\"Drop a crutch\" (목발을 떨어뜨리다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "pill bottle",
+        "response":  [
+                         "\"Open a pill bottle\" (약통을 열다)",
+                         "\"Shake the pill bottle\" (약통을 흔들다)",
+                         "\"Read the label on the pill bottle\" (약통의 라벨을 읽다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "stethoscope",
+        "response":  [
+                         "\"Listen with a stethoscope\" (청진기로 진찰하다)",
+                         "\"Place a stethoscope on the chest\" (청진기를 가슴에 대다)",
+                         "\"Wipe the stethoscope\" (청진기를 닦다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "thermometer",
+        "response":  [
+                         "\"Check the thermometer\" (체온계를 확인하다)",
+                         "\"Put the thermometer in the ear\" (체온계를 귀에 넣다)",
+                         "\"Hold the thermometer\" (체온계를 들다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "syringe",
+        "response":  [
+                         "\"Fill a syringe\" (주사기를 채우다)",
+                         "\"Push the syringe\" (주사기를 누르다)",
+                         "\"Dispose of a syringe\" (주사기를 폐기하다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "iv bag",
+        "response":  [
+                         "\"Hang an IV bag\" (수액 팩을 걸다)",
+                         "\"Change the IV bag\" (수액 팩을 교체하다)",
+                         "\"Check the IV bag\" (수액 팩을 확인하다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "scale",
+        "response":  [
+                         "\"Step on the scale\" (체중계 위에 올라서다)",
+                         "\"Read the scale\" (체중계를 읽다)",
+                         "\"Move the scale\" (체중계를 옮기다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "bandage",
+        "response":  [
+                         "\"Wrap a bandage\" (붕대를 감다)",
+                         "\"Unwrap the bandage\" (붕대를 풀다)",
+                         "\"Cut the bandage\" (붕대를 자르다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "adhesive bandage",
+        "response":  [
+                         "\"Put on an adhesive bandage\" (반창고를 붙이다)",
+                         "\"Peel off the adhesive bandage\" (반창고를 떼어내다)",
+                         "\"Open an adhesive bandage\" (반창고를 뜯다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "oxygen mask",
+        "response":  [
+                         "\"Wear an oxygen mask\" (산소마스크를 쓰다)",
+                         "\"Take off the oxygen mask\" (산소마스크를 벗다)",
+                         "\"Adjust the oxygen mask\" (산소마스크를 조절하다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "patient gown",
+        "response":  [
+                         "\"Wear a patient gown\" (환자복을 입다)",
+                         "\"Change into a patient gown\" (환자복으로 갈아입다)",
+                         "\"Button up the patient gown\" (환자복 단추를 채우다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "call button",
+        "response":  [
+                         "\"Press the call button\" (호출벨을 누르다)",
+                         "\"Hold the call button\" (호출벨을 손에 쥐다)",
+                         "\"Reach for the call button\" (호출벨로 손을 뻗다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "blood pressure cuff",
+        "response":  [
+                         "\"Wrap the blood pressure cuff\" (혈압계 커프를 감다)",
+                         "\"Unfasten the blood pressure cuff\" (혈압계 커프를 풀다)",
+                         "\"Inflate the blood pressure cuff\" (혈압계 커프를 팽창시키다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "prescription",
+        "response":  [
+                         "\"Hand over the prescription\" (처방전을 건네다)",
+                         "\"Read the prescription\" (처방전을 읽다)",
+                         "\"Submit the prescription\" (처방전을 제출하다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "ice pack",
+        "response":  [
+                         "\"Put an ice pack on\" (냉찜질팩을 올려놓다)",
+                         "\"Freeze the ice pack\" (냉찜질팩을 얼리다)",
+                         "\"Hold the ice pack\" (냉찜질팩을 잡고 있다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "urine cup",
+        "response":  [
+                         "\"Hold a urine cup\" (소변 검사컵을 들다)",
+                         "\"Fill the urine cup\" (소변 검사컵을 채우다)",
+                         "\"Hand over the urine cup\" (소변 검사컵을 제출하다/건네다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "hand sanitizer",
+        "response":  [
+                         "\"Pump the hand sanitizer\" (손 소독제를 짜다)",
+                         "\"Rub hand sanitizer on hands\" (손에 손 소독제를 바르다)",
+                         "\"Place the hand sanitizer on the table\" (테이블 위에 손 소독제를 놓다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "hospital bed",
+        "response":  [
+                         "\"Lie on the hospital bed\" (병상에 눕다)",
+                         "\"Get out of the hospital bed\" (병상에서 일어나다)",
+                         "\"Adjust the hospital bed\" (병상을 조절하다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "number ticket",
+        "response":  [
+                         "\"Take a number ticket\" (대기 번호표를 뽑다)",
+                         "\"Check the number ticket\" (대기 번호표를 확인하다)",
+                         "\"Wait for your number to be called\" (번호가 호출되기를 기다리다)"
+                     ]
+    }
+]

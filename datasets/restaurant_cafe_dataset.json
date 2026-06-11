@@ -1,0 +1,182 @@
+﻿[
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "bottle",
+        "response":  [
+                         "\"Open a bottle\" (물병을 열다)",
+                         "\"Fill the bottle with water\" (물병에 물을 채우다)",
+                         "\"Pass the bottle\" (물병을 건네다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "cup",
+        "response":  [
+                         "\"Hold a cup\" (컵을 잡다)",
+                         "\"Wash the cup\" (컵을 씻다)",
+                         "\"Knock over a cup\" (컵을 엎지르다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "wine glass",
+        "response":  [
+                         "\"Clink wine glasses\" (와인잔을 부딪치다)",
+                         "\"Pour into a wine glass\" (와인잔에 따르다)",
+                         "\"Break a wine glass\" (와인잔을 깨뜨리다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "bowl",
+        "response":  [
+                         "\"Fill a bowl\" (그릇을 채우다)",
+                         "\"Empty the bowl\" (그릇을 비우다)",
+                         "\"Drop a bowl\" (그릇을 떨어뜨리다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "plate",
+        "response":  [
+                         "\"Clear the plates\" (접시를 치우다)",
+                         "\"Put food on a plate\" (접시에 음식을 담다)",
+                         "\"Stack the plates\" (접시를 쌓다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "spoon",
+        "response":  [
+                         "\"Eat with a spoon\" (숟가락으로 먹다)",
+                         "\"Drop a spoon\" (숟가락을 떨어뜨리다)",
+                         "\"Stir with a spoon\" (숟가락으로 젓다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "fork",
+        "response":  [
+                         "\"Poke with a fork\" (포크로 콕 찍다)",
+                         "\"Set a fork on the table\" (테이블에 포크를 놓다)",
+                         "\"Pick up a fork\" (포크를 집어 들다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "knife",
+        "response":  [
+                         "\"Cut with a knife\" (나이프로 자르다)",
+                         "\"Sharpen a knife\" (나이프를 갈다)",
+                         "\"Hold a knife\" (나이프를 쥐다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "chair",
+        "response":  [
+                         "\"Pull up a chair\" (의자를 당겨 앉다)",
+                         "\"Move the chair\" (의자를 옮기다)",
+                         "\"Adjust the chair\" (의자를 조절하다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "dining table",
+        "response":  [
+                         "\"Wipe the dining table\" (식탁을 닦다)",
+                         "\"Set the dining table\" (식탁을 차리다)",
+                         "\"Clear the dining table\" (식탁을 치우다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "tray",
+        "response":  [
+                         "\"Carry a tray\" (쟁반을 들고 나르다)",
+                         "\"Put it on a tray\" (쟁반 위에 올려놓다)",
+                         "\"Drop the tray\" (쟁반을 떨어뜨리다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "microwave",
+        "response":  [
+                         "\"Heat up food in the microwave\" (전자레인지에 음식을 데우다)",
+                         "\"Open the microwave door\" (전자레인지 문을 열다)",
+                         "\"Clean the microwave\" (전자레인지를 청소하다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "blender",
+        "response":  [
+                         "\"Turn on the blender\" (믹서기를 켜다)",
+                         "\"Put fruit in the blender\" (믹서기에 과일을 넣다)",
+                         "\"Wash the blender\" (믹서기를 세척하다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "refrigerator",
+        "response":  [
+                         "\"Open the refrigerator\" (냉장고를 열다)",
+                         "\"Keep it in the refrigerator\" (냉장고에 보관하다)",
+                         "\"Clean out the refrigerator\" (냉장고를 정리하다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "trash can",
+        "response":  [
+                         "\"Throw it in the trash can\" (쓰레기통에 버리다)",
+                         "\"Empty the trash can\" (쓰레기통을 비우다)",
+                         "\"Open the trash can lid\" (쓰레기통 뚜껑을 열다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "teapot",
+        "response":  [
+                         "\"Pour tea from a teapot\" (찻주전자에서 차를 따르다)",
+                         "\"Fill the teapot\" (찻주전자를 채우다)",
+                         "\"Wash the teapot\" (찻주전자를 씻다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "coffee maker",
+        "response":  [
+                         "\"Turn on the coffee maker\" (커피메이커를 켜다)",
+                         "\"Clean the coffee maker\" (커피메이커를 청소하다)",
+                         "\"Brew coffee with a coffee maker\" (커피메이커로 커피를 내리다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "sauce bottle",
+        "response":  [
+                         "\"Shake the sauce bottle\" (소스통을 흔들다)",
+                         "\"Squeeze the sauce bottle\" (소스통을 짜다)",
+                         "\"Refill the sauce bottle\" (소스통을 다시 채우다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "menu board",
+        "response":  [
+                         "\"Look at the menu board\" (메뉴판을 보다)",
+                         "\"Open the menu board\" (메뉴판을 펼치다)",
+                         "\"Point at the menu board\" (메뉴판을 가리키다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "tissue box",
+        "response":  [
+                         "\"Pull a tissue out of the box\" (티슈 상자에서 휴지를 한 장 뽑다)",
+                         "\"Open a new tissue box\" (새 휴지 상자를 뜯다)",
+                         "\"Place a tissue box on the table\" (테이블 위에 휴지 상자를 놓다)"
+                     ]
+    }
+]
