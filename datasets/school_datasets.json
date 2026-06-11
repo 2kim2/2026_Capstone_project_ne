@@ -1,0 +1,182 @@
+﻿[
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "chair",
+        "response":  [
+                         "\"Sit on a chair\" (의자에 앉다)",
+                         "\"Pull up a chair\" (의자를 당겨 앉다)",
+                         "\"Adjust the chair\" (의자를 조절하다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "desk",
+        "response":  [
+                         "\"Clear off the desk\" (책상을 정리하다)",
+                         "\"Sit at the desk\" (책상에 앉다)",
+                         "\"Organize the desk\" (책상을 정돈하다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "clock",
+        "response":  [
+                         "\"Check the clock\" (시계를 확인하다)",
+                         "\"Set the clock\" (시계를 맞추다)",
+                         "\"The clock is ticking\" (시계가 가고 있다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "microphone",
+        "response":  [
+                         "\"Speak into the microphone\" (마이크에 대고 말하다)",
+                         "\"Turn on the microphone\" (마이크를 켜다)",
+                         "\"Test the microphone\" (마이크를 테스트하다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "podium",
+        "response":  [
+                         "\"Stand behind the podium\" (강단 뒤에 서다)",
+                         "\"Step up to the podium\" (강단으로 나아가다)",
+                         "\"Leave the podium\" (강단에서 내려오다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "blackboard",
+        "response":  [
+                         "\"Write on the blackboard\" (칠판에 적다)",
+                         "\"Erase the blackboard\" (칠판을 지우다)",
+                         "\"Look at the blackboard\" (칠판을 보다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "projector screen",
+        "response":  [
+                         "\"Pull down the projector screen\" (프로젝터 스크린을 내리다)",
+                         "\"Look at the projector screen\" (프로젝터 스크린을 바라보다)",
+                         "\"Roll up the projector screen\" (프로젝터 스크린을 올리다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "desktop computer",
+        "response":  [
+                         "\"Turn on the desktop computer\" (데스크탑 컴퓨터를 켜다)",
+                         "\"Shut down the desktop computer\" (데스크탑 컴퓨터를 끄다)",
+                         "\"Upgrade the desktop computer\" (데스크탑 컴퓨터를 업그레이드하다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "mouse",
+        "response":  [
+                         "\"Click the mouse\" (마우스를 클릭하다)",
+                         "\"Move the mouse\" (마우스를 움직이다)",
+                         "\"Replace the mouse battery\" (마우스 배터리를 교체하다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "keyboard",
+        "response":  [
+                         "\"Type on the keyboard\" (키보드로 타이핑하다)",
+                         "\"Clean the keyboard\" (키보드를 청소하다)",
+                         "\"Unplug the keyboard\" (키보드 선을 뽑다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "door",
+        "response":  [
+                         "\"Open the door\" (문을 열다)",
+                         "\"Lock the door\" (문을 잠그다)",
+                         "\"Knock on the door\" (문을 두드리다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "book",
+        "response":  [
+                         "\"Read a book\" (책을 읽다)",
+                         "\"Open the book to page 10\" (책 10페이지를 펼치다)",
+                         "\"Borrow a book\" (책을 빌리다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "laptop",
+        "response":  [
+                         "\"Open the laptop\" (노트북을 열다)",
+                         "\"Charge the laptop\" (노트북을 충전하다)",
+                         "\"Close the laptop\" (노트북을 닫다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "curtain",
+        "response":  [
+                         "\"Draw the curtains\" (커튼을 치다/걷다)",
+                         "\"Open the curtains\" (커튼을 열다)",
+                         "\"Close the curtains\" (커튼을 닫다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "window",
+        "response":  [
+                         "\"Open the window\" (창문을 열다)",
+                         "\"Look out the window\" (창밖을 내다보다)",
+                         "\"Wipe the window\" (창문을 닦다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "stairs",
+        "response":  [
+                         "\"Go up the stairs\" (계단을 올라가다)",
+                         "\"Walk down the stairs\" (계단을 내려가다)",
+                         "\"Use the stairs\" (계단을 이용하다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "pencil",
+        "response":  [
+                         "\"Sharpen a pencil\" (연필을 깎다)",
+                         "\"Write with a pencil\" (연필로 쓰다)",
+                         "\"Break the pencil lead\" (연필심을 부러뜨리다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "ballpoint pen",
+        "response":  [
+                         "\"Click the ballpoint pen\" (볼펜을 딸깍 누르다)",
+                         "\"Run out of ink in a ballpoint pen\" (볼펜 잉크가 다 떨어지다)",
+                         "\"Lend a ballpoint pen\" (볼펜을 빌려주다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "eraser",
+        "response":  [
+                         "\"Use an eraser\" (지우개를 사용하다)",
+                         "\"Brush away eraser crumbs\" (지우개 가루를 털어내다)",
+                         "\"Lose the eraser\" (지우개를 잃어버리다)"
+                     ]
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "bag",
+        "response":  [
+                         "\"Pack a bag\" (가방을 싸다)",
+                         "\"Carry a bag\" (가방을 메다/들다)",
+                         "\"Unzip the bag\" (가방 지퍼를 열다)"
+                     ]
+    }
+]

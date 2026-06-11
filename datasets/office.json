@@ -1,0 +1,102 @@
+﻿[
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "monitor",
+        "response":  "\"Turn on the monitor\" (모니터를 켜다)\n\"Turn off the monitor\" (모니터를 끄다)\n\"Stare at the monitor\" (모니터를 보다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "keyboard",
+        "response":  "\"Type on the keyboard\" (키보드를 치다)\n\"Press a key on the keyboard\" (키보드의 키를 누르다)\n\"Unplug the keyboard\" (키보드 연결을 빼다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "shredder",
+        "response":  "\"Shred confidential documents\" (기밀 문서를 파쇄하다)\n\"Empty the shredder bin\" (파쇄기 통을 비우다)\n\"The shredder is jammed\" (파쇄기가 걸렸다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "copier",
+        "response":  "\"Make copies of the report\" (보고서를 복사하다)\n\"Refill paper in the copier\" (복사기에 용지를 채워 넣다)\n\"Fix a paper jam in the copier\" (복사기 용지 걸림을 해결하다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "office chair",
+        "response":  "\"Adjust the height of the chair\" (의자 높낮이를 조절하다)\n\"Lean back in the office chair\" (사무용 의자에 기대앉다)\n\"Pull out the chair\" (의자를 빼다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "badge",
+        "response":  "\"Tap the employee badge\" (사원증을 태그하다)\n\"Wear the badge around the neck\" (사원증을 목에 걸다)\n\"Lose the employee badge\" (사원증을 잃어버리다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "stapler",
+        "response":  "\"Staple the papers together\" (서류들을 스테이플러로 찍다)\n\"Refill the stapler with staples\" (스테이플러 알을 채우다)\n\"Remove a staple\" (스테이플러 심을 뽑다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "file cabinet",
+        "response":  "\"Lock the file cabinet\" (서류함을 잠그다)\n\"Organize folders in the cabinet\" (서류함의 폴더들을 정리하다)\n\"Look for a document in the cabinet\" (서류함에서 문서를 찾다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "projector",
+        "response":  "\"Set up the projector for the meeting\" (회의를 위해 프로젝터를 세팅하다)\n\"Connect a laptop to the projector\" (노트북을 프로젝터에 연결하다)\n\"Turn off the projector lamp\" (프로젝터 램프를 끄다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "whiteboard",
+        "response":  "\"Write ideas on the whiteboard\" (화이트보드에 아이디어를 적다)\n\"Erase the whiteboard\" (화이트보드를 지우다)\n\"Clean the whiteboard\" (화이트보드를 청소하다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "water cooler",
+        "response":  "\"Get a glass of water from the cooler\" (정수기에서 물을 한 잔 떠오다)\n\"Replace the water cooler bottle\" (정수기 물통을 갈아 끼우다)\n\"Push the lever to get hot water\" (뜨거운 물을 받기 위해 레버를 밀다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "desk calendar",
+        "response":  "\"Mark the deadline on the calendar\" (달력에 마감일을 표시하다)\n\"Flip the page of the desk calendar\" (탁상달력 장을 넘기다)\n\"Check the meeting schedule on the calendar\" (달력에서 회의 일정을 확인하다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "sticky note",
+        "response":  "\"Write a reminder on a sticky note\" (포스트잇에 기억할 일을 적다)\n\"Leave a sticky note on the monitor\" (모니터에 포스트잇을 붙여두다)\n\"Throw away the old sticky note\" (오래된 포스트잇을 버리다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "calculator",
+        "response":  "\"Pick up the calculator\" (계산기를 집어 들다)\n\"Enter the numbers into the calculator\" (계산기에 수치를 입력하다)\n\"Press a button on the calculator\" (계산기 버튼을 누르다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "coffee maker",
+        "response":  "\"Place a cup under the coffee maker\" (커피머신 아래에 컵을 받쳐놓다)\n\"Press the button on the coffee maker\" (커피머신 버튼을 누르다)\n\"Add coffee beans to the machine\" (머신에 커피 원두를 채우다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "headset",
+        "response":  "\"Put on the headset\" (헤드셋을 쓰다)\n\"Adjust the headset microphone\" (헤드셋 마이크를 조절하다)\n\"Take off the headset after the meeting\" (회의가 끝난 후 헤드셋을 벗다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "laminator",
+        "response":  "\"Laminate the notice board paper\" (안내판 종이를 코팅하다)\n\"Wait for the laminator to heat up\" (코팅기가 예열되기를 기다리다)\n\"Insert the pouch into the laminator\" (코팅 필름을 코팅기에 넣다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "extension cord",
+        "response":  "\"Plug a computer into the extension cord\" (멀티탭에 컴퓨터를 꽂다)\n\"Turn off the extension cord switch\" (멀티탭 전원 스위치를 끄다)\n\"Untangle the extension cord wires\" (엉킨 멀티탭 선을 풀다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "badge reader",
+        "response":  "\"Hold the badge against the reader\" (리더기에 사원증을 대다)\n\"The badge reader didn\u0027t recognize it\" (사원증 리더기가 인식하지 못했다)\n\"Wait for the green light on the reader\" (리더기에 초록 불이 들어올 때까지 기다리다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "desk organizer",
+        "response":  "\"Put pens in the desk organizer\" (펜꽂이에 펜을 꽂다)\n\"Clear out the desk organizer\" (책상 정리함을 싹 비우다)\n\"Keep office supplies in the organizer\" (정리함에 사무용품을 보관하다)"
+    }
+]

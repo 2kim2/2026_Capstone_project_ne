@@ -1,0 +1,102 @@
+﻿[
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "turnstile",
+        "response":  "\"Tap a card on the turnstile\" (개찰구에 카드를 찍다)\n\"Go through the turnstile\" (개찰구를 통과하다)\n\"Get stuck at the turnstile\" (개찰구에 걸리다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "handrail",
+        "response":  "\"Hold onto the handrail\" (손잡이를 잡다)\n\"Reach for the handrail\" (손잡이 쪽으로 손을 뻗다 / 손잡이를 잡으려고 하다)\n\"Let go of the handrail\" (손잡이를 놓다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "vending machine",
+        "response":  "\"Insert coins into a vending machine\" (자판기에 동전을 넣다)\n\"Select a drink from the vending machine\" (자판기에서 음료를 고르다)\n\"Get change from the vending machine\" (자판기에서 거스름돈을 받다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "subway map",
+        "response":  "\"Look at the subway map\" (지하철 노선도를 보다)\n\"Follow the line on the subway map\" (노선도에서 호선을 눈(손 등)으로 따라가다)\n\"Find the station on the subway map\" (노선도에서 역을 찾다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "ticket",
+        "response":  "\"Buy a transit ticket\" (교통 티켓을 사다)\n\"Scan a ticket\" (티켓을 스캔하다)\n\"Lose a transit ticket\" (교통 티켓을 잃어버리다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "locker",
+        "response":  "\"Rent a storage locker\" (보관함을 대여하다)\n\"Put bags in a locker\" (보관함에 가방을 넣다)\n\"Lock the locker door\" (보관함 문을 잠그다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "escalator",
+        "response":  "\"Step onto the escalator\" (에스컬레이터에 타다)\n\"Stand on the escalator\" (에스컬레이터에 서 있다)\n\"Walk up the escalator\" (에스컬레이터 위를 걸어 올라가다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "elevator",
+        "response":  "\"Press the elevator button\" (엘리베이터 버튼을 누르다)\n\"Get into the elevator\" (엘리베이터에 타다)\n\"Wait for the elevator\" (엘리베이터를 기다리다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "bench",
+        "response":  "\"Sit on the transit bench\" (대기 의자에 앉다)\n\"Find an empty bench\" (빈 의자를 찾다)\n\"Put a bag on the bench\" (의자에 가방을 놓다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "timetable",
+        "response":  "\"Check the bus timetable\" (버스 시간표를 확인하다)\n\"Read the train timetable\" (열차 시간표를 읽다)\n\"Look up the departure timetable\" (출발 시간표를 찾아보다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "screen door",
+        "response":  "\"Stand behind the screen door\" (스크린도어 뒤에 서다)\n\"Wait for the screen door to open\" (스크린도어가 열리기를 기다리다)\n\"Lean on the screen door\" (스크린도어에 기대다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "trash can",
+        "response":  "\"Throw trash in the trash can\" (쓰레기통에 쓰레기를 버리다)\n\"Find a public trash can\" (공공 쓰레기통을 찾다)\n\"The trash can is overflowing\" (쓰레기통이 가득 차서 넘치다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "announcement board",
+        "response":  "\"Check the announcement board\" (안내 전광판을 확인하다)\n\"Read the electronic announcement board\" (전자 안내판을 읽다)\n\"Watch the arrival announcement board\" (도착 안내판을 주시하다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "charging station",
+        "response":  "\"Find a phone charging station\" (휴대폰 충전소를 찾다)\n\"Use a public charging station\" (공공 충전소를 이용하다)\n\"Plug a phone into the charging station\" (충전소에 폰을 꽂다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "umbrella stand",
+        "response":  "\"Put an umbrella in the stand\" (우산 꽂이에 우산을 넣다)\n\"Leave an umbrella in the umbrella stand\" (우산 꽂이에 우산을 두고 오다)\n\"Take an umbrella from the stand\" (우산 꽂이에서 우산을 꺼내다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "seat",
+        "response":  "\"Offer a seat to someone\" (누군가에게 자리를 양보하다)\n\"Find an empty seat\" (빈자리를 찾다)\n\"Take a seat\" (자리에 앉다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "handle",
+        "response":  "\"Hold onto a transit handle\" (버스/지하철 손잡이를 잡다)\n\"Reach for the handle\" (손잡이로 손을 뻗다)\n\"Let go of the handle\" (손잡이를 놓다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "bell",
+        "response":  "\"Press the stop bell\" (하차 벨을 누르다)\n\"Ring the bell early\" (벨을 일찍 누르다)\n\"Hear the stop bell ring\" (하차 벨이 울리는 것을 듣다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "card reader",
+        "response":  "\"Tap a card on the reader\" (카드 단말기에 카드를 대다)\n\"Hold a card against the reader\" (단말기에 카드를 대고 있다)\n\"Wait for the card reader to beep\" (단말기에서 삐 소리가 날 때까지 기다리다)"
+    },
+    {
+        "instruction":  "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input":  "bus route map",
+        "response":  "\"Check the bus route map\" (버스 노선도를 확인하다)\n\"Look closely at the route map\" (노선도를 자세히 들여다보다)\n\"Find the bus stop on the route map\" (노선도에서 버스 정류장을 찾다)"
+    }
+]

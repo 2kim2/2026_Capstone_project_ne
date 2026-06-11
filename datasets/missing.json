@@ -1,0 +1,533 @@
+[
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "person",
+        "response": [
+            "\"Talk to the person\" (그 사람에게 말을 걸다)",
+            "\"Meet a new person\" (새로운 사람을 만나다)",
+            "\"Help the person\" (그 사람을 돕다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "bicycle",
+        "response": [
+            "\"Ride a bicycle\" (자전거를 타다)",
+            "\"Park the bicycle\" (자전거를 세워두다)",
+            "\"Fix the bicycle\" (자전거를 고치다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "car",
+        "response": [
+            "\"Drive the car\" (차를 운전하다)",
+            "\"Get in the car\" (차에 타다)",
+            "\"Wash the car\" (차를 세차하다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "motorcycle",
+        "response": [
+            "\"Start the motorcycle\" (오토바이 시동을 걸다)",
+            "\"Ride a motorcycle\" (오토바이를 타다)",
+            "\"Get off the motorcycle\" (오토바이에서 내리다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "airplane",
+        "response": [
+            "\"Board the airplane\" (비행기에 탑승하다)",
+            "\"Miss the airplane\" (비행기를 놓치다)",
+            "\"Look at the airplane\" (비행기를 보다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "bus",
+        "response": [
+            "\"Catch the bus\" (버스를 타다)",
+            "\"Wait for the bus\" (버스를 기다리다)",
+            "\"Get off the bus\" (버스에서 내리다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "train",
+        "response": [
+            "\"Take the train\" (기차를 타다)",
+            "\"Transfer to another train\" (다른 기차로 환승하다)",
+            "\"Miss the train\" (기차를 놓치다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "truck",
+        "response": [
+            "\"Load the truck\" (트럭에 짐을 싣다)",
+            "\"Drive a truck\" (트럭을 운전하다)",
+            "\"Unload the truck\" (트럭에서 짐을 내리다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "boat",
+        "response": [
+            "\"Rent a boat\" (보트를 빌리다)",
+            "\"Row the boat\" (보트의 노를 젓다)",
+            "\"Get on the boat\" (보트에 올라타다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "traffic light",
+        "response": [
+            "\"Stop at the traffic light\" (신호등에서 멈추다)",
+            "\"Wait for the traffic light to change\" (신호등이 바뀌기를 기다리다)",
+            "\"Run a red traffic light\" (빨간 신호등을 위반하다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "fire hydrant",
+        "response": [
+            "\"Connect a hose to the fire hydrant\" (소화전에 호스를 연결하다)",
+            "\"Don't park in front of the fire hydrant\" (소화전 앞에 주차하지 마세요)",
+            "\"Open the fire hydrant\" (소화전을 열다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "stop sign",
+        "response": [
+            "\"Stop at the stop sign\" (정지 표지판에서 멈추다)",
+            "\"Ignore the stop sign\" (정지 표지판을 무시하다)",
+            "\"Look out for the stop sign\" (정지 표지판을 주의해서 보다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "parking meter",
+        "response": [
+            "\"Put coins in the parking meter\" (주차 미터기에 동전을 넣다)",
+            "\"Check the parking meter\" (주차 미터기를 확인하다)",
+            "\"Pay at the parking meter\" (주차 미터기에서 결제하다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "bird",
+        "response": [
+            "\"Feed the bird\" (새에게 먹이를 주다)",
+            "\"Watch the bird fly\" (새가 나는 것을 보다)",
+            "\"Listen to the bird sing\" (새가 우는 소리를 듣다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "cat",
+        "response": [
+            "\"Pet the cat\" (고양이를 쓰다듬다)",
+            "\"Feed the cat\" (고양이에게 밥을 주다)",
+            "\"Play with the cat\" (고양이와 놀아주다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "dog",
+        "response": [
+            "\"Walk the dog\" (개와 산책하다)",
+            "\"Feed the dog\" (개에게 밥을 주다)",
+            "\"Train the dog\" (개를 훈련시키다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "horse",
+        "response": [
+            "\"Ride a horse\" (말을 타다)",
+            "\"Feed the horse\" (말에게 먹이를 주다)",
+            "\"Brush the horse\" (말을 빗질해주다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "sheep",
+        "response": [
+            "\"Shear the sheep\" (양털을 깎다)",
+            "\"Count the sheep\" (양을 세다)",
+            "\"Herd the sheep\" (양 떼를 몰다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "cow",
+        "response": [
+            "\"Milk the cow\" (소의 젖을 짜다)",
+            "\"Feed the cow\" (소에게 여물을 주다)",
+            "\"Watch the cow graze\" (소가 풀을 뜯는 것을 보다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "elephant",
+        "response": [
+            "\"Look at the elephant\" (코끼리를 보다)",
+            "\"Ride an elephant\" (코끼리를 타다)",
+            "\"Feed the elephant\" (코끼리에게 먹이를 주다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "bear",
+        "response": [
+            "\"Spot a bear\" (곰을 발견하다)",
+            "\"Run away from the bear\" (곰으로부터 도망치다)",
+            "\"Watch the bear\" (곰을 관찰하다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "zebra",
+        "response": [
+            "\"Look at the zebra\" (얼룩말을 보다)",
+            "\"Take a picture of the zebra\" (얼룩말 사진을 찍다)",
+            "\"Feed the zebra\" (얼룩말에게 먹이를 주다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "giraffe",
+        "response": [
+            "\"Feed the giraffe\" (기린에게 먹이를 주다)",
+            "\"Look at the giraffe's neck\" (기린의 목을 보다)",
+            "\"Take a photo of the giraffe\" (기린의 사진을 찍다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "umbrella",
+        "response": [
+            "\"Open the umbrella\" (우산을 펴다)",
+            "\"Close the umbrella\" (우산을 접다)",
+            "\"Share an umbrella\" (우산을 같이 쓰다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "tie",
+        "response": [
+            "\"Put on a tie\" (넥타이를 매다)",
+            "\"Take off the tie\" (넥타이를 풀다)",
+            "\"Adjust the tie\" (넥타이를 고쳐 매다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "suitcase",
+        "response": [
+            "\"Pack the suitcase\" (여행 가방을 싸다)",
+            "\"Unpack the suitcase\" (여행 가방을 풀다)",
+            "\"Carry the suitcase\" (여행 가방을 나르다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "frisbee",
+        "response": [
+            "\"Throw the frisbee\" (프리스비를 던지다)",
+            "\"Catch the frisbee\" (프리스비를 잡다)",
+            "\"Play with a frisbee\" (프리스비를 가지고 놀다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "skis",
+        "response": [
+            "\"Put on the skis\" (스키를 신다)",
+            "\"Rent some skis\" (스키를 빌리다)",
+            "\"Take off the skis\" (스키를 벗다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "snowboard",
+        "response": [
+            "\"Ride a snowboard\" (스노보드를 타다)",
+            "\"Buy a snowboard\" (스노보드를 사다)",
+            "\"Wax the snowboard\" (스노보드에 왁스칠을 하다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "sports ball",
+        "response": [
+            "\"Kick the sports ball\" (스포츠 공을 차다)",
+            "\"Throw the sports ball\" (스포츠 공을 던지다)",
+            "\"Catch the sports ball\" (스포츠 공을 잡다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "kite",
+        "response": [
+            "\"Fly a kite\" (연을 날리다)",
+            "\"Make a kite\" (연을 만들다)",
+            "\"Hold the kite string\" (연줄을 잡다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "baseball bat",
+        "response": [
+            "\"Swing the baseball bat\" (야구 방망이를 휘두르다)",
+            "\"Hold the baseball bat\" (야구 방망이를 잡다)",
+            "\"Buy a baseball bat\" (야구 방망이를 사다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "baseball glove",
+        "response": [
+            "\"Put on the baseball glove\" (야구 글러브를 끼다)",
+            "\"Catch the ball with the baseball glove\" (야구 글러브로 공을 잡다)",
+            "\"Break in a new baseball glove\" (새 야구 글러브를 길들이다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "skateboard",
+        "response": [
+            "\"Ride a skateboard\" (스케이트보드를 타다)",
+            "\"Do a trick on the skateboard\" (스케이트보드로 묘기를 부리다)",
+            "\"Buy a new skateboard\" (새 스케이트보드를 사다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "surfboard",
+        "response": [
+            "\"Wax the surfboard\" (서프보드에 왁스칠을 하다)",
+            "\"Carry the surfboard\" (서프보드를 나르다)",
+            "\"Stand on the surfboard\" (서프보드 위에 서다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "tennis racket",
+        "response": [
+            "\"Grip the tennis racket\" (테니스 라켓을 쥐다)",
+            "\"Swing the tennis racket\" (테니스 라켓을 휘두르다)",
+            "\"Restring the tennis racket\" (테니스 라켓 줄을 다시 매다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "banana",
+        "response": [
+            "\"Peel the banana\" (바나나 껍질을 벗기다)",
+            "\"Eat a banana\" (바나나를 먹다)",
+            "\"Mash the banana\" (바나나를 으깨다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "apple",
+        "response": [
+            "\"Bite into the apple\" (사과를 베어 물다)",
+            "\"Wash the apple\" (사과를 씻다)",
+            "\"Slice the apple\" (사과를 자르다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "sandwich",
+        "response": [
+            "\"Make a sandwich\" (샌드위치를 만들다)",
+            "\"Eat the sandwich\" (샌드위치를 먹다)",
+            "\"Pack a sandwich\" (샌드위치를 도시락으로 싸다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "orange",
+        "response": [
+            "\"Peel the orange\" (오렌지 껍질을 까다)",
+            "\"Squeeze the orange\" (오렌지 즙을 짜다)",
+            "\"Eat an orange\" (오렌지를 먹다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "broccoli",
+        "response": [
+            "\"Steam the broccoli\" (브로콜리를 찌다)",
+            "\"Chop the broccoli\" (브로콜리를 썰다)",
+            "\"Eat some broccoli\" (브로콜리를 먹다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "carrot",
+        "response": [
+            "\"Peel the carrot\" (당근 껍질을 벗기다)",
+            "\"Chop the carrot\" (당근을 썰다)",
+            "\"Eat a raw carrot\" (생당근을 먹다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "hot dog",
+        "response": [
+            "\"Eat a hot dog\" (핫도그를 먹다)",
+            "\"Grill the hot dog\" (핫도그 소시지를 굽다)",
+            "\"Put mustard on the hot dog\" (핫도그에 머스터드를 뿌리다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "pizza",
+        "response": [
+            "\"Order a pizza\" (피자를 주문하다)",
+            "\"Bake a pizza\" (피자를 굽다)",
+            "\"Eat a slice of pizza\" (피자 한 조각을 먹다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "donut",
+        "response": [
+            "\"Eat a donut\" (도넛을 먹다)",
+            "\"Buy a box of donuts\" (도넛 한 상자를 사다)",
+            "\"Bake some donuts\" (도넛을 굽다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "cake",
+        "response": [
+            "\"Bake a cake\" (케이크를 굽다)",
+            "\"Cut the cake\" (케이크를 자르다)",
+            "\"Decorate the cake\" (케이크를 장식하다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "couch",
+        "response": [
+            "\"Sit on the couch\" (소파에 앉다)",
+            "\"Lie down on the couch\" (소파에 눕다)",
+            "\"Buy a new couch\" (새 소파를 사다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "potted plant",
+        "response": [
+            "\"Water the potted plant\" (화분에 물을 주다)",
+            "\"Buy a potted plant\" (화분 식물을 사다)",
+            "\"Prune the potted plant\" (화분 식물의 가지를 치다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "toilet",
+        "response": [
+            "\"Flush the toilet\" (변기 물을 내리다)",
+            "\"Clean the toilet\" (변기를 청소하다)",
+            "\"Use the toilet\" (화장실을 사용하다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "remote",
+        "response": [
+            "\"Press the button on the remote\" (리모컨 버튼을 누르다)",
+            "\"Look for the remote\" (리모컨을 찾다)",
+            "\"Change the batteries in the remote\" (리모컨 배터리를 교체하다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "cell phone",
+        "response": [
+            "\"Pick up the cell phone\" (휴대폰을 집어 들다)",
+            "\"Charge the cell phone\" (휴대폰을 충전하다)",
+            "\"Put the cell phone in your pocket\" (휴대폰을 주머니에 넣다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "oven",
+        "response": [
+            "\"Turn on the oven\" (오븐을 켜다)",
+            "\"Put the food in the oven\" (음식을 오븐에 넣다)",
+            "\"Preheat the oven\" (오븐을 예열하다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "toaster",
+        "response": [
+            "\"Put bread in the toaster\" (토스터에 빵을 넣다)",
+            "\"Unplug the toaster\" (토스터의 플러그를 뽑다)",
+            "\"Clean the toaster\" (토스터를 청소하다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "sink",
+        "response": [
+            "\"Wash dishes in the sink\" (싱크대에서 설거지하다)",
+            "\"Turn on the faucet in the sink\" (싱크대 수도꼭지를 틀다)",
+            "\"Unclog the sink\" (싱크대 막힌 것을 뚫다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "vase",
+        "response": [
+            "\"Put flowers in the vase\" (꽃병에 꽃을 꽂다)",
+            "\"Fill the vase with water\" (꽃병에 물을 채우다)",
+            "\"Break the vase\" (꽃병을 깨뜨리다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "scissors",
+        "response": [
+            "\"Cut paper with scissors\" (가위로 종이를 자르다)",
+            "\"Sharpen the scissors\" (가위를 갈다)",
+            "\"Hand over the scissors\" (가위를 건네주다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "teddy bear",
+        "response": [
+            "\"Hug the teddy bear\" (테디베어를 안다)",
+            "\"Buy a teddy bear\" (테디베어를 사다)",
+            "\"Sleep with a teddy bear\" (테디베어와 함께 자다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "hair drier",
+        "response": [
+            "\"Turn on the hair drier\" (헤어드라이어를 켜다)",
+            "\"Dry hair with a hair drier\" (헤어드라이어로 머리를 말리다)",
+            "\"Unplug the hair drier\" (헤어드라이어 플러그를 뽑다)"
+        ]
+    },
+    {
+        "instruction": "입력된 영어 단어(사물)와 연관된 유용한 일상 영어 표현 3가지를 리스트 형태로 생성해라.",
+        "input": "toothbrush",
+        "response": [
+            "\"Put toothpaste on the toothbrush\" (칫솔에 치약을 짜다)",
+            "\"Brush your teeth with a toothbrush\" (칫솔로 양치질하다)",
+            "\"Replace your toothbrush\" (칫솔을 교체하다)"
+        ]
+    }
+]
