@@ -94,6 +94,7 @@ FastAPI 기반 REST API 구조
 응답 속도 최적화
 모바일 프론트 연동 개선
 다중 객체 확장 기능 추가
+
 👨‍💻 개발 역할 (Backend)
 YOLO 모델 통합
 FastAPI 서버 구축
