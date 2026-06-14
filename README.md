@@ -71,20 +71,24 @@ POST /chat
 FastAPI 백엔드 → LLM 서버 (ngrok)
 객체 단어를 JSON으로 전달
 예문 3개 생성 후 반환
+
 📂 프로젝트 구조
 2026_Capstone_project_ne/
  ├ main.py
  ├ requirements.txt
  ├ README.md
  ├ .gitignore
+
 🚀 실행 방법
 pip install -r requirements.txt
 uvicorn main:app --reload
+
 🎯 주요 기능
 YOLO 기반 실시간 객체 인식
 단일 객체 중심 처리
 LLM 기반 영어 예문 자동 생성
 FastAPI 기반 REST API 구조
+
 📌 향후 개선 계획
 객체 인식 정확도 향상
 응답 속도 최적화
