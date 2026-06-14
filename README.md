@@ -67,6 +67,8 @@ POST /chat
   }
 }
 
+---
+
 AI 서버 연동 구조
 FastAPI 백엔드 → LLM 서버 (ngrok)
 객체 단어를 JSON으로 전달
