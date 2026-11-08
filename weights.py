@@ -1,5 +1,3 @@
-
-
 # =========================================
 # 장소별 객체 가중치
 # 점수는 필요하면 계속 조정하면 됩니다.
@@ -9,20 +7,18 @@ PLACE_WEIGHTS = {
         "cup": 4,
         "wine glass": 3,
         "bottle": 2,
-        "chair": 2,
+        # "chair": 2,
         "dining table": 4,
         "fork": 1,
         "knife": 1,
         "spoon": 1,
         "bowl": 1,
         "pizza": 2,
-        "person": 3,
         "cake": 2,
     },
     "restaurant": {
-        "chair": 3,
-        "dining table": 4,
-        "cup": 2,
+        #"chair": 3,
+        #"dining table": 4,
         "wine glass": 2,
         "fork": 2,
         "knife": 2,
@@ -32,8 +28,7 @@ PLACE_WEIGHTS = {
         "cake": 1,
     },
     "office": {
-        "person": 1,
-        "chair": 3,
+        # "chair": 3,
         "laptop": 4,
         "keyboard": 4,
         "mouse": 4,
@@ -44,8 +39,7 @@ PLACE_WEIGHTS = {
         "potted plant": 1,
     },
     "classroom": {
-        "person": 2,
-        "chair": 3,
+        # "chair": 3,
         "backpack": 4,
         "book": 4,
         "laptop": 2,
@@ -55,7 +49,6 @@ PLACE_WEIGHTS = {
         "bottle": 1,
     },
     "park": {
-        "person": 2,
         "bench": 4,
         "dog": 3,
         "umbrella": 2,
@@ -66,7 +59,6 @@ PLACE_WEIGHTS = {
         "skateboard": 1,
     },
     "street": {
-        "person": 1,
         "car": 4,
         "bus": 4,
         "truck": 3,
@@ -92,9 +84,8 @@ PLACE_WEIGHTS = {
         "refrigerator": 4,
     },
     "living_room": {
-        "person": 1,
         "couch": 5,
-        "chair": 2,
+        # "chair": 2,
         "tv": 4,
         "remote": 3,
         "potted plant": 2,
@@ -107,32 +98,29 @@ PLACE_WEIGHTS = {
         "tv": 2,
         "book": 1,
         "clock": 1,
-        "chair": 1,
+        # "chair": 1,
         "laptop": 1,
     },
     "bathroom": {
         "toilet": 5,
         "sink": 4,
         "toothbrush": 2,
-        "person": 1,
         "bottle": 1,
     },
     "beach": {
-        "person": 2,
         "umbrella": 4,
         "boat": 3,
         "surfboard": 5,
         "kite": 2,
         "bottle": 1,
-        "chair": 1,
+        # "chair": 1,
     },
     "airport": {
         "airplane": 5,
         "suitcase": 4,
         "backpack": 3,
-        "person": 5,
         "bench": 2,
-        "chair": 1,
+        # "chair": 1,
         "clock": 1,
         "tv": 1,
     },
@@ -145,4 +133,11 @@ PLACE_WEIGHTS = {
         "dog": 2,
         "horse": 2,
     },
+    "library": {
+        "book": 5,
+        # "chair": 2,
+        "dining table": 1,
+        "backpack": 2,
+        "handbag": 1,
+    }
 }
