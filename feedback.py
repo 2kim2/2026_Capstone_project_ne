@@ -7,8 +7,9 @@
 #          같은 폴더에 vocab_ko.json, vocab_wiktionary.json 필요. pip install spacy wordfreq
 #
 # 필요 패키지: pip install spacy wordfreq && python -m spacy download en_core_web_sm
-#             (LoRA를 쓸 때만) pip install peft
- 
+#            
+
+
 import difflib
 import json
 import os
@@ -26,25 +27,17 @@ from pydantic import BaseModel
 # =========================================
 # 설정
 # =========================================
-# ---- LLM 실행 방식 ----
-#   "ollama":       음성 AI 서버(main.py)와 같은 Ollama를 HTTP로 호출. 모델을 따로 GPU에 올리지 않음 (권장)
-#   "transformers": 이 프로세스가 Qwen을 직접 GPU에 올림 (model_dir 필요, 기존 방식)
-LLM_BACKEND = "ollama"
+# ---- LLM: main.py와 같은 Ollama 모델 ----
 OLLAMA_URL = "http://127.0.0.1:11434"       # main.py와 같은 주소
 OLLAMA_MODEL = "liveng-qwen"                # main.py와 같은 모델이면 VRAM을 추가로 쓰지 않음. `ollama list`로 이름 확인
 OLLAMA_NUM_CTX = 2048                       # main.py와 반드시 같게! 다르면 Ollama가 모델을 다시 올려서 두 서버 모두 느려짐
 OLLAMA_PARALLEL = 4                         # 피드백 작업을 동시에 몇 개 보낼지 (Ollama의 OLLAMA_NUM_PARALLEL과 맞추면 좋음)
  
-# transformers 방식일 때만 사용
-model_dir = r"C:\Users\DS\Desktop\ne_yolo\feedback_server\qwen2.5_3b"
-LOAD_IN_4BIT = True          # 8GB GPU에서는 True 권장 (fp16 3B는 VRAM이 넘쳐 6배 이상 느려짐). pip install bitsandbytes
  
 MAX_KEYWORDS = 5
 KEYWORD_MAX_ZIPF = 4.5       # 이 값보다 흔한 단어는 "쉬운 단어"로 보고 제외 (낮출수록 어려운 단어만)
 PHRASE_MAX_ZIPF = 4.8        # 복합명사/구동사(credit card, pick up)용 기준
-BATCH_SIZE = 8               # 한 번에 생성할 프롬프트 수. [batch] 로그의 vram이 GPU 용량에 가까우면 낮추세요 (4bit 기준 8GB면 8 OK)
-DEBUG_BATCH = True           # 배치마다 시간/토큰 수/GPU 메모리를 출력 (느린 원인 찾기용)
-RESTRICT_CHARS = True        # 생성 단계에서 한글/영어/기본 문장부호 외 문자(일본어, 중국어, 태국어 등)를 막음
+DEBUG_BATCH = True           # 묶음마다 걸린 시간을 출력 (느린 원인 찾기용)
 DEBUG_REJECTS = True         # 검사에서 버려진 모델 출력을 콘솔에 출력 (원인 파악용)
  
 # ---- v5 추가 설정 ----
@@ -59,9 +52,6 @@ CONTEXT_TURNS = 2            # 번역할 때 문맥으로 보여 줄 앞 턴 수
 EXPLAIN_WITH_LLM = True      # False면 설명을 모델 대신 템플릿으로 만듦 (3·4단계 생략, 가장 큰 속도 이득)
 WARMUP = True                # 서버 시작할 때 한 번 생성해 둠 (첫 요청이 느린 문제)
 CACHE_SIZE = 5000            # 번역/단어 뜻 캐시 크기 (같은 문장, 같은 단어는 다시 생성하지 않음)
-# 번역 LoRA 어댑터 폴더 (finetune/train_qlora.py 결과). None이면 기본 모델만 사용
-ADAPTER_DIR = None           # 예: r"C:\Users\DS\Desktop\ne_yolo\feedback_server\finetune\out\qwen2.5-3b-translate-lora"
-LORA_TASKS = {"translate"}   # 어댑터를 쓸 작업
  
 # 단어 목록에서 빼고 싶은 단어 (너무 쉽거나 의미 없는 단어를 여기 추가)
 EXTRA_EXCLUDE_WORDS = {"sir", "ma'am", "dollar", "dollars", "cent", "cents", "minute", "minutes", "today", "problem", "sure"}
@@ -110,47 +100,22 @@ for _name in ["vocab_wiktionary.json", "vocab_ko.json"]:      # 뒤에 읽은 �
 GLOSSARY_NO_CHECK = {"warm up", "heat up", "tap", "insert", "pick up", "no ice", "iced"}   # 번역문에 그대로 안 나와도 되는 항목 (동사 등)
  
 # =========================================
-# 모델 로딩
+# Ollama 연결 (모델은 main.py와 같은 liveng-qwen)
 # =========================================
-if LLM_BACKEND == "transformers":
-    import torch
-    from transformers import AutoTokenizer, AutoModelForCausalLM, LogitsProcessor, LogitsProcessorList
-    tokenizer = AutoTokenizer.from_pretrained(model_dir, trust_remote_code=True)
-    tokenizer.padding_side = "left"          # 배치 생성은 왼쪽 패딩이어야 함
-    if tokenizer.pad_token is None:
-        tokenizer.pad_token = tokenizer.eos_token
-    _model_kwargs = dict(trust_remote_code=True, device_map="cuda", attn_implementation="sdpa")
-    if LOAD_IN_4BIT:
-        from transformers import BitsAndBytesConfig
-        _model_kwargs["quantization_config"] = BitsAndBytesConfig(
-            load_in_4bit=True, bnb_4bit_compute_dtype=torch.float16, bnb_4bit_quant_type="nf4"
-        )
-    else:
-        _model_kwargs["torch_dtype"] = torch.float16
-    model = AutoModelForCausalLM.from_pretrained(model_dir, **_model_kwargs)
-    if ADAPTER_DIR:
-        from peft import PeftModel
-        model = PeftModel.from_pretrained(model, ADAPTER_DIR, adapter_name="lora")
-        print(f"[lora] 어댑터 사용: {ADAPTER_DIR} (작업: {sorted(LORA_TASKS)})")
-    model.eval()
-    print(f"[info] device={model.device}, dtype={next(model.parameters()).dtype}, "
-          f"cuda={torch.cuda.is_available()}" + (f" ({torch.cuda.get_device_name(0)})" if torch.cuda.is_available() else ""))
-else:
-    import httpx
-    tokenizer = model = None
-    ollama_client = httpx.Client(base_url=OLLAMA_URL,
-                                 timeout=httpx.Timeout(connect=5.0, read=180.0, write=30.0, pool=10.0))
-    try:
-        _names = [m.get("name", "") for m in ollama_client.get("/api/tags").json().get("models", [])]
-        if not any(n == OLLAMA_MODEL or n.split(":")[0] == OLLAMA_MODEL for n in _names):
-            print(f"[경고] Ollama에 '{OLLAMA_MODEL}' 모델이 없습니다. 있는 모델: {_names}")
-        print(f"[info] LLM: Ollama {OLLAMA_URL} / {OLLAMA_MODEL} (num_ctx={OLLAMA_NUM_CTX}, 동시 {OLLAMA_PARALLEL})")
-    except Exception as e:
-        print(f"[경고] Ollama에 연결하지 못했습니다 ({OLLAMA_URL}): {e}")
+import httpx
+ollama_client = httpx.Client(base_url=OLLAMA_URL,
+                             timeout=httpx.Timeout(connect=5.0, read=180.0, write=30.0, pool=10.0))
+try:
+    _names = [m.get("name", "") for m in ollama_client.get("/api/tags").json().get("models", [])]
+    if not any(n == OLLAMA_MODEL or n.split(":")[0] == OLLAMA_MODEL for n in _names):
+        print(f"[경고] Ollama에 '{OLLAMA_MODEL}' 모델이 없습니다. 있는 모델: {_names}")
+    print(f"[info] LLM: Ollama {OLLAMA_URL} / {OLLAMA_MODEL} (num_ctx={OLLAMA_NUM_CTX}, 동시 {OLLAMA_PARALLEL})")
+except Exception as e:
+    print(f"[경고] Ollama에 연결하지 못했습니다 ({OLLAMA_URL}): {e}")
  
 # =========================================
 # 허용 문자: ASCII(영어, 숫자, 기본 기호) + 한글 + 일부 문장부호/화살표
-#   이 밖의 문자(テ, อ, 中 등)는 생성 단계에서 막고, 검사 단계에서도 걸러냄
+#   이 밖의 문자(テ, อ, 中 등)가 나오면 검사 단계에서 걸러서 재시도
 # =========================================
 FOREIGN_CHAR_RE = re.compile(
     r"[^\u0000-\u007F"          # ASCII
@@ -163,30 +128,6 @@ FOREIGN_CHAR_RE = re.compile(
 )
  
  
-def build_char_blocker():
-    """허용 문자 밖의 글자를 포함한 토큰을 미리 찾아 두고, 생성 중에 확률을 0으로 만든다."""
-    t = time.perf_counter()
-    bad = []
-    special = set(tokenizer.all_special_ids)
-    for tid in range(len(tokenizer)):
-        if tid in special:
-            continue
-        text = tokenizer.decode([tid]).replace("\ufffd", "")   # 바이트 조각(한글 일부일 수 있음)은 허용
-        if text and FOREIGN_CHAR_RE.search(text):
-            bad.append(tid)
-    bad_ids = torch.tensor(bad, dtype=torch.long, device=model.device)
-    print(f"[info] 외국 문자 토큰 {len(bad)}개 차단 준비 ({time.perf_counter() - t:.1f}s)")
- 
-    class BlockForeignChars(LogitsProcessor):
-        def __call__(self, input_ids, scores):
-            scores[:, bad_ids] = -float("inf")
-            return scores
- 
-    return LogitsProcessorList([BlockForeignChars()])
- 
- 
-# 외국 문자 차단은 transformers 방식에서만 가능 (Ollama는 검사 단계에서 걸러서 재시도)
-char_blocker = build_char_blocker() if RESTRICT_CHARS and LLM_BACKEND == "transformers" else None
  
 # =========================================
 # spaCy / wordfreq (없어도 돌아가지만 단어 품질이 떨어짐)
@@ -230,7 +171,7 @@ BASIC_WORDS = {
 # =========================================
 # 엔드포인트는 router에 등록 → 음성 AI 서버(main.py)에 붙여서 서버 하나로 돌릴 수 있음
 #   main.py에서:  from feedback import router as feedback_router
-#                 app.include_router(feedback_router, prefix="/ai")   → /ai/feedback, /ai/translate
+#                 app.include_router(feedback_router)   → /feedback, /translate (prefix="/ai"를 주면 /ai/feedback)
 #   단독 실행도 가능: uvicorn feedback:app --port 8001  → /feedback, /translate
 router = APIRouter()
  
@@ -403,8 +344,7 @@ MEANING_SHOTS = [
  
 # =========================================
 # 생성 함수 (배치)
-#   여러 프롬프트를 한 번의 model.generate로 동시에 생성합니다.
-#   GPU는 1개를 만들든 8개를 만들든 걸리는 시간이 거의 같아서, 문장 수만큼 빨라집니다.
+#   여러 작업을 Ollama에 동시에(OLLAMA_PARALLEL개씩) 보내서 한꺼번에 생성합니다.
 # =========================================
 def make_job(system_prompt: str, user_content: str,
              shots: Optional[List[Tuple[str, str]]] = None,
@@ -416,12 +356,8 @@ def make_job(system_prompt: str, user_content: str,
         messages.append({"role": "assistant", "content": a})
     messages.append({"role": "user", "content": user_content})
     messages.extend(extra or [])
-    if LLM_BACKEND == "transformers":
-        prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
-    else:
-        prompt = json.dumps(messages, ensure_ascii=False)      # 정렬용 길이 계산에만 씀
-    adapter = "lora" if ADAPTER_DIR and task in LORA_TASKS else "__base__"
-    return {"prompt": prompt, "messages": messages, "max_new_tokens": max_new_tokens, "adapter": adapter}
+    prompt = json.dumps(messages, ensure_ascii=False)      # 길이 확인용
+    return {"prompt": prompt, "messages": messages, "max_new_tokens": max_new_tokens}
  
  
 def _ollama_generate(job: Dict[str, Any]) -> str:
@@ -446,67 +382,17 @@ def _ollama_generate(job: Dict[str, Any]) -> str:
         return ""
  
  
-_ollama_pool = ThreadPoolExecutor(max_workers=OLLAMA_PARALLEL) if LLM_BACKEND == "ollama" else None
- 
- 
-def _generate_chunk(prompts: List[str], max_new_tokens: int, adapters: List[str]) -> List[str]:
-    """프롬프트 묶음 하나를 생성. GPU 메모리가 부족하면 반으로 나눠서 다시 시도."""
-    try:
-        t0 = time.perf_counter()
-        enc = tokenizer(prompts, return_tensors="pt", padding=True).to(model.device)
-        start = enc["input_ids"].shape[1]
-        lora_kw = {"adapter_names": adapters} if ADAPTER_DIR else {}
-        with torch.inference_mode():
-            out = model.generate(
-                **enc,
-                **lora_kw,
-                do_sample=False,
-                max_new_tokens=max_new_tokens,
-                repetition_penalty=1.05,
-                eos_token_id=tokenizer.eos_token_id,
-                pad_token_id=tokenizer.pad_token_id,
-                logits_processor=char_blocker
-            )
-        if DEBUG_BATCH:
-            vram = (f", vram {torch.cuda.max_memory_allocated() / 2**30:.1f}"
-                    f"(예약 {torch.cuda.memory_reserved() / 2**30:.1f})/"
-                    f"{torch.cuda.get_device_properties(0).total_memory / 2**30:.1f}GB"
-                    if torch.cuda.is_available() else "")
-            print(f"[batch] {len(prompts)}개, 입력 {start}토큰, 생성 {out.shape[1] - start}토큰 "
-                  f"(최대 {max_new_tokens}), {time.perf_counter() - t0:.1f}s{vram}")
-        return [tokenizer.decode(o[start:], skip_special_tokens=True).strip() for o in out]
-    except torch.cuda.OutOfMemoryError:
-        if len(prompts) == 1:
-            raise
-        torch.cuda.empty_cache()
-        half = len(prompts) // 2
-        print(f"[warn] GPU 메모리 부족 → 배치 {len(prompts)}개를 {half}+{len(prompts) - half}로 나눔 "
-              f"(BATCH_SIZE를 낮추면 이 경고가 사라집니다)")
-        return (_generate_chunk(prompts[:half], max_new_tokens, adapters[:half])
-                + _generate_chunk(prompts[half:], max_new_tokens, adapters[half:]))
+_ollama_pool = ThreadPoolExecutor(max_workers=OLLAMA_PARALLEL)
  
  
 def generate_batch(jobs: List[Dict[str, Any]]) -> List[str]:
     if not jobs:
         return []
-    if LLM_BACKEND == "ollama":
-        t0 = time.perf_counter()
-        outs = list(_ollama_pool.map(_ollama_generate, jobs))
-        if DEBUG_BATCH:
-            print(f"[batch] Ollama {len(jobs)}개 (동시 {OLLAMA_PARALLEL}), {time.perf_counter() - t0:.1f}s")
-        return outs
-    outputs = [""] * len(jobs)
-    # 한 배치는 가장 긴 출력이 끝날 때까지 기다리므로, 출력 길이(max_new_tokens)가 비슷한 것끼리 묶음.
-    # 같으면 프롬프트 길이로 묶어서 패딩 낭비를 줄임.
-    order = sorted(range(len(jobs)), key=lambda i: (jobs[i]["max_new_tokens"], len(jobs[i]["prompt"])))
-    for c in range(0, len(order), BATCH_SIZE):
-        idx = order[c:c + BATCH_SIZE]
-        res = _generate_chunk([jobs[i]["prompt"] for i in idx],
-                              max(jobs[i]["max_new_tokens"] for i in idx),
-                              [jobs[i]["adapter"] for i in idx])
-        for i, r in zip(idx, res):
-            outputs[i] = r
-    return outputs
+    t0 = time.perf_counter()
+    outs = list(_ollama_pool.map(_ollama_generate, jobs))
+    if DEBUG_BATCH:
+        print(f"[batch] Ollama {len(jobs)}개 (동시 {OLLAMA_PARALLEL}), {time.perf_counter() - t0:.1f}s")
+    return outs
  
  
 class LRUCache:
@@ -1354,4 +1240,3 @@ def translate(request: TranslateRequest):
 # 단독 실행용 앱 (main.py에 붙일 때는 쓰이지 않음)
 app = FastAPI(title="Feedback Server")
 app.include_router(router)
- 
