@@ -1,16 +1,8 @@
-# qwen_local_chat.py  (v5: AI 발화 번역 + 번역 품질 + 속도)
+# feedback.py  (전체 대화 번역/단어 추출 + 사용자 발화 패러프레이징)
 #
-# v4(main2.py) 대비 바뀐 점
-#   [번역] AI(assistant) 발화도 모두 번역 → 응답에 translation_by_turn 추가 (기존 필드는 그대로)
-#   [번역] 화자에 맞는 말투(직원/면접관 = 정중한 존댓말, 학습자 = 손님 말투) + 앞 대화 2턴을 문맥으로 제공
-#   [번역] 직원/면접관/의사 말투 few-shot 추가, 문맥까지 번역해 버린 경우(too_long/extra) 문맥 없이 재시도
-#   [단어] AI 발화에서도 단어 추출 (KEYWORDS_FROM_AI), 같은 단어는 한 번만 뜻 생성, 용어/제외어 직접 추가 가능
-#   [속도] 시작할 때 워밍업, 번역/단어 뜻 캐시, 출력 길이 기준 배치 정렬, OOM 나면 배치 자동 분할,
-#          설명을 템플릿으로 바꾸는 빠른 모드(EXPLAIN_WITH_LLM=False), 동시 요청 직렬화(lock)
-#   [옵션] ADAPTER_DIR에 번역 LoRA 폴더를 넣으면 번역에만 어댑터 사용 (main4_lora.py 기능 통합)
 #   [배포] 음성 AI 서버(main.py)와 한 서버로: 이 파일을 main.py 폴더에 feedback.py로 두고 main.py에서
 #            from feedback import router as feedback_router
-#            app.include_router(feedback_router, prefix="/ai")
+#            app.include_router(feedback_router)
 #          LLM_BACKEND="ollama": main.py와 같은 Ollama 모델을 사용 (GPU에 모델을 따로 안 올림)
 #          같은 폴더에 vocab_ko.json, vocab_wiktionary.json 필요. pip install spacy wordfreq
 #
