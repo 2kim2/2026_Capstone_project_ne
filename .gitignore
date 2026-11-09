@@ -224,3 +224,5 @@ results/
 *.pt
 *.safetensors
 *.bin
+
+kaikki-English.jsonl
