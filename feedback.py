@@ -1198,43 +1198,44 @@ def feedback(request: ConversationRequest):
 # 턴 하나만 번역 (대화 중에 실시간으로 부르는 용도)
 #   대화하는 동안 백엔드가 턴마다 이걸 불러 두면, 번역이 캐시에 남아서
 #   마지막 /feedback 때는 번역을 다시 만들지 않음 → /feedback이 그만큼 빨라짐
+# 백엔드랑 연동 안됨 -> 하나의 방법으로 적어봄
 # =========================================
-class TranslateRequest(BaseModel):
-    role: str = "assistant"
-    message: str
-    context: List[Dict[str, Any]] = []      # 선택: 앞 턴들 [{"role": ..., "message": ...}]
+# class TranslateRequest(BaseModel):
+#     role: str = "assistant"
+#     message: str
+#     context: List[Dict[str, Any]] = []      # 선택: 앞 턴들 [{"role": ..., "message": ...}]
  
  
-def translate_one(role: str, text: str, context: str) -> Optional[str]:
-    cached = TRANSLATION_CACHE.get((role, text))
-    if cached:
-        return cached
-    out = fix_added_counts(text, clean_output(generate_batch([translate_job(text, role, context)])[0], TR_PREFIXES))
-    cands = [out]
-    probs = translation_problems(text, out, role)
-    if probs:
-        retry = generate_batch([translate_job(text, role, system=translation_retry_system(out, probs))])[0]
-        cands.append(fix_added_counts(text, clean_output(retry, TR_PREFIXES)))
-    best = pick_translation(text, cands, role)
-    if best and not translation_problems(text, best, role):
-        TRANSLATION_CACHE.put((role, text), best)
-    return best
+# def translate_one(role: str, text: str, context: str) -> Optional[str]:
+#     cached = TRANSLATION_CACHE.get((role, text))
+#     if cached:
+#         return cached
+#     out = fix_added_counts(text, clean_output(generate_batch([translate_job(text, role, context)])[0], TR_PREFIXES))
+#     cands = [out]
+#     probs = translation_problems(text, out, role)
+#     if probs:
+#         retry = generate_batch([translate_job(text, role, system=translation_retry_system(out, probs))])[0]
+#         cands.append(fix_added_counts(text, clean_output(retry, TR_PREFIXES)))
+#     best = pick_translation(text, cands, role)
+#     if best and not translation_problems(text, best, role):
+#         TRANSLATION_CACHE.put((role, text), best)
+#     return best
  
  
-@router.post("/translate")
-def translate(request: TranslateRequest):
-    text = request.message.strip()
-    if not text:
-        return {"translation_ko": None}
-    role = "user" if request.role.lower() == "user" else "ai"
-    history = [f"{'A' if str(t.get('role', '')).lower() == 'user' else 'B'}: {str(t.get('message', '')).strip()}"
-               for t in request.context if str(t.get("message", "")).strip()]
-    context = "\n".join(history[-CONTEXT_TURNS:]) if CONTEXT_TURNS > 0 else ""
-    t0 = time.perf_counter()
-    with _lock:
-        ko = translate_one(role, text, context)
-    print(f"[time] /translate: {time.perf_counter() - t0:.2f}s")
-    return {"role": request.role, "original_en": text, "translation_ko": ko}
+# @router.post("/translate")
+# def translate(request: TranslateRequest):
+#     text = request.message.strip()
+#     if not text:
+#         return {"translation_ko": None}
+#     role = "user" if request.role.lower() == "user" else "ai"
+#     history = [f"{'A' if str(t.get('role', '')).lower() == 'user' else 'B'}: {str(t.get('message', '')).strip()}"
+#                for t in request.context if str(t.get("message", "")).strip()]
+#     context = "\n".join(history[-CONTEXT_TURNS:]) if CONTEXT_TURNS > 0 else ""
+#     t0 = time.perf_counter()
+#     with _lock:
+#         ko = translate_one(role, text, context)
+#     print(f"[time] /translate: {time.perf_counter() - t0:.2f}s")
+#     return {"role": request.role, "original_en": text, "translation_ko": ko}
  
  
 # 단독 실행용 앱 (main.py에 붙일 때는 쓰이지 않음)
